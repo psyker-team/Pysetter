@@ -7,7 +7,7 @@ mkdir tmp 2>NUL
 
 echo Setting git proxy...
 
-git config --global --unset http.proxy >tmp/stdout.txt 2>tmp/stderr.txt
+git config --global http.proxy "http://127.0.0.1:7890" >tmp/stdout.txt 2>tmp/stderr.txt
 
 :exit
 @echo on
